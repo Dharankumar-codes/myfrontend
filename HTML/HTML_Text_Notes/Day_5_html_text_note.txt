@@ -1,0 +1,23 @@
+WEBPAGE
+
+WEBSITE
+
+Static - Dynamic
+
+HTML -
+
+Tags
+
+Elements
+
+Block Level - Inline
+
+Formating tags - Intractive Tags
+
+Sementic tags - Non Sementic tags
+
+Attributes
+
+Global -
+
+Local -
