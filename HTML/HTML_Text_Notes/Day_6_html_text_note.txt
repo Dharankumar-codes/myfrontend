@@ -1,0 +1,27 @@
+Data Collection - inputs , select , text area, form, editable content - contenteditable
+
+form Elements
+
+input - to take the invidula datas -
+
+<input /> - text box
+
+lable - close
+
+text-area - take the big text datas
+
+input - attributes -
+
+type - text,checkbox,number,tel,combo(redio),email,password,file,date,datelocal,time,year,month
+
+name - what ever
+
+value - Its is the Exact value of your input - if your enter the value its allocated to that input
+
+placeholder - water mark - if you touch or enter the input that value is hide automatically.
+
+hidden - its hide you input to the screen not the code
+
+readonly - you can't access the input but you see the input
+
+required - when you using the form only worked - then its shwing the valiaion error . if empty feild
