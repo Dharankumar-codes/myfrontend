@@ -15,16 +15,9 @@
                     <a href="#Basic">WEB Basics</a> ||
                     <a href="#Home">About HTML</a> ||
                     <a href="#Block">Block-level Element</a> ||
-                    <a href="#Inline">Inline Element</a> ||
-                    <a href="#Semantic-tags">Semantic-tags</a> ||
-                    <a href="#Non-Semantic">Non-Semantic tags</a> ||
-                    <a href="#Formating-tags">Formating-tags</a> ||
                     <a href="#Interactive-tags">Interactive-tags</a> ||
-                    <a href="#Attribute">Attribute</a> ||
                     <a href="#Data-collection">Data-collection</a> ||
-                    <a href="#Form-Element">Form Element</a> ||
-                    <a href="#Select-Element">Select Element</a> ||
-                    <a href="#Table-element">Table Element</a> || <br> <br>
+                    <a href="#Data-Projection">Data-Projection</a> ||
                     <a href="#html5">HTML5 Details</a> ||
                 </div>
             </nav>
@@ -45,6 +38,11 @@
                 <li>People can open a website using a browser.</li>
                 <li>Examples : Google and amazon</li>
             </ul>
+            <p>What is Static and dynamic website? <br>A static website is a website where the content is fixed and does
+                not change for every user. It is created using HTML and shows the same information to all users. and
+                example : A simple company website or personal portfolio page. <br>
+                A dynamic website is a website where the content changes based on user or data. It uses database and
+                programming languages. and example : YouTube, Facebook, Amazon.</p>
             <p>what is webpage? <br>A webpage is a single page of a website displayed in a browser. like Home page and
                 about page etc.,</p>
             <p>What is http?</p>
@@ -112,25 +110,25 @@
                 </li>
             </ul>
             <p>what is extension? <br> Extension tells what type of file it is. like index.html and photo.jpg</p>
-
-            <Section>
-                <div>
-                    <h1><strong><mark>HTML COMPLETE EXPLANATION</mark></strong></h1>
-                    <img src="../Assets/Images/html-oldlogo.webp" alt="html-logo" width="1500" height="350">
-                    <p>What is Markup language? <br> A markup language is a language used to structure and format
-                        content using tags.</p>
-                    <P>What is html?</P>
-                    <ul>
-                        <li>HTML stands for HyperText Markup Language.</li>
-                        <li>HTML is a markup language used to create webpages and it gives structure to the content and
-                            uses Tags</li>
-                    </ul>
-                    <p>What is Tag? <br> Tags are predefined keywords written inside angle brackets <>.</p>
-                    <p>What are types of Tags? <br> There are divided into Two types that is container Tag and another
-                        one is self closing tags</p>
-                    <p>What is container tag? <br> Container tag contains content between opening and closing tags and
-                        Example : See comment</p>
-                    <!-- This Example for container tag are 
+    </main>
+    <section id="Home">
+        <div>
+            <h1><strong><mark>HTML COMPLETE EXPLANATION</mark></strong></h1>
+            <img src="../Assets/Images/html-oldlogo.webp" alt="html-logo" width="1500" height="350">
+            <p>What is Markup language? <br> A markup language is a language used to structure and format
+                content using tags.</p>
+            <P>What is html?</P>
+            <ul>
+                <li>HTML stands for HyperText Markup Language.</li>
+                <li>HTML is a markup language used to create webpages and it gives structure to the content and
+                    uses Tags</li>
+            </ul>
+            <p>What is Tag? <br> Tags are predefined keywords written inside angle brackets <>.</p>
+            <p>What are types of Tags? <br> There are divided into Two types that is container Tag and another
+                one is self closing tags</p>
+            <p>What is container tag? <br> Container tag contains content between opening and closing tags and
+                Example : See comment</p>
+            <!-- This Example for container tag are 
  <p> tag is used to create a paragraph.
 <h1> to <h6> tags are used to create headings.
 <div> tag is used as a container for grouping content.
@@ -156,8 +154,10 @@
 <a> tag is used to create hyperlinks.
 <strong> tag is used to show important bold text.
 <mark> tag is used to highlight text. -->
-                    <p>what is self closing tag? <br> A self-closing tag is a tag that does not need a closing tag and Example : See comment</p></div>
-                <!-- This is example for self closing tags are 
+            <p>what is self closing tag? <br> A self-closing tag is a tag that does not need a closing tag and
+                Example : See comment</p>
+        </div>
+        <!-- This is example for self closing tags are 
 <br> is a self-closing tag used for line breaks.
 <hr> is a self-closing tag used to create a horizontal line.
 <img> is a self-closing tag used to display images.
@@ -173,19 +173,19 @@
 <track> is a self-closing tag used to add subtitles in media files.
 <wbr> is a self-closing tag used to suggest line break opportunities. -->
         </div>
-        </Section>
-        <Article>
-            <div>
-                <h2><Strong><mark>Block Level Element</mark></Strong></h2>
-                <p>What is Block level Element</p>
-                <ul>
-                    <li>it is always start with New line.
-                    <li>it is like a container to hold the many content or tags inside the block level</li>
-                    <li>it always take a full width of the screen.</li>
-                    <li>Block level are building your basic structure</li>
-                    <li>Block level Element Example tags : See comment</li>
-                </ul>
-                <!-- This is example for block level element tag are
+    </section>
+    <Article id="Block">
+        <div>
+            <h2><Strong><mark>Block Level Element</mark></Strong></h2>
+            <p>What is Block level Element</p>
+            <ul>
+                <li>it is always start with New line.
+                <li>it is like a container to hold the many content or tags inside the block level</li>
+                <li>it always take a full width of the screen.</li>
+                <li>Block level are building your basic structure</li>
+                <li>Block level Element Example tags : See comment</li>
+            </ul>
+            <!-- This is example for block level element tag are
 <div> is a block-level container tag.
 <p> is a block-level paragraph tag.
 <h1> to <h6> are block-level heading tags.
@@ -201,19 +201,22 @@
 <li> is a block-level list item tag.
 <table> is a block-level table tag.
 <form> is a block-level form tag.
-<hr> is a block-level self-closing tag. -->
-            </div>
-        </Article>
-        <aside>
-            <div><h2><strong><mark>Inline Element</mark></strong></h2>
+This is only <hr> is a block-level self-closing tag. -->
+        </div>
+    </Article>
+    <aside>
+        <div>
+            <h2><strong><mark>Inline Element</mark></strong></h2>
             <p>What is inline Element?</p>
-            <ul><li> its not start with new line.</li>
-            <li> its take the content width.</li>
-        <li> inside a inline you will add any inline</li>
-    <li> inside a block level also you added the inline</li>
-<li>you can't add inside a inline never add a block level elements.</li>
-<li>Inline Element Example tags : See comment</li></ul>
-<!-- This is example of inline element tags are 
+            <ul>
+                <li> its not start with new line.</li>
+                <li> its take the content width.</li>
+                <li> inside a inline you will add any inline</li>
+                <li> inside a block level also you added the inline</li>
+                <li>you can't add inside a inline never add a block level elements.</li>
+                <li>Inline Element Example tags : See comment</li>
+            </ul>
+            <!-- This is example of inline element tags are 
  <span> is an inline element used to style small text parts.
 <a> is an inline element used to create hyperlinks.
 <strong> is an inline element used to show important bold text.
@@ -229,8 +232,8 @@
 <sub> is an inline element used to show subscript text.
 <sup> is an inline element used to show superscript text.
 <br> is an inline element used to break a line. -->
-<p>What are inline element closing? <br> See comment</p>
-<!-- This are inline element closing tags are
+            <p>What are inline element closing tags? <br> See comment</p>
+            <!-- This are inline element closing tags are
  <span></span> is an inline element used to style small parts of text.
 <a></a> is an inline element used to create hyperlinks.
 <strong></strong> is an inline element used to show important bold text.
@@ -246,8 +249,8 @@
 <cite></cite> is an inline element used to reference a source or citation.
 <q></q> is an inline element used to display short quotations.
 <time></time> is an inline element used to show date or time. -->
-<p>What are inline element self closing tags? <br> see comments</p>
-<!-- This is inline element self closing tags are
+            <p>What are inline element self closing tags? <br> see comments</p>
+            <!-- This is inline element self closing tags are
  <img> is a self-closing inline tag used to display images.
 <input> is a self-closing inline tag used to take user input.
 <br> is a self-closing inline tag used to break a line.
@@ -257,14 +260,338 @@
 <track> is a self-closing tag used for subtitles in videos.
 <wbr> is a self-closing tag used to suggest line break points.
   -->
-        </div></aside>
-        <section><div>
+        </div>
+    </aside>
+    <section>
+        <div>
+            <h2><strong><mark>Formating Tags</mark></strong></h2>
+            <p>What is Formating Tags? <br> Formatting tags are used to change the appearance of text like bold,
+                italic, underline, highlight, etc.</p>
+            <p>what are block level formating tags <br> see comment</p>
+            <!-- The block level closing formating tags are
+             The paragraph tag is <p>...</p> used for writing text paragraphs.
+The heading tags are <h1>...</h1> to <h6>...</h6> used for titles and subtitles.
+The division tag is <div>...</div> used as a container for grouping content.
+The section tag is <section>...</section> used to define sections in a page.
+The article tag is <article>...</article> used for independent content like blogs or news.
+The header tag is <header>...</header> used for page or section headings.
+The footer tag is <footer>...</footer> used for bottom section of a page.
+The navigation tag is <nav>...</nav> used for menu links.
+The form tag is <form>...</form> used to collect user input.
+The unordered list tag is <ul>...</ul> used for bullet lists.
+The ordered list tag is <ol>...</ol> used for numbered lists.
+The list item tag is <li>...</li> used inside lists.
+The table tag is <table>...</table> used for displaying data in rows and columns.
+The table row tag is <tr>...</tr> used inside tables.
+The table cell tag is <td>...</td> used for table data.
+The table header cell tag is <th>...</th> used for table headings.
+The blockquote tag is <blockquote>...</blockquote> used for long quotations. -->
+            <p>What are formating inline tags? <br> formatting inline tags are tags used to style or format text
+                without starting a new line. They stay inside a sentence or paragraph.</p>
+            <p>What are formating inline closing tags? <br> seee comments</p>
+            <!-- They are The bold tag is <b>...</b> used for simple bold text.
+The strong tag is <strong>...</strong> used for important bold text.
+The italic tag is <i>...</i> used for slanted text.
+The emphasized tag is <em>...</em> used for emphasis.
+The mark tag is <mark>...</mark> used to highlight text.
+The small tag is <small>...</small> used for smaller text.
+The delete tag is <del>...</del> used to show deleted text with strike line.
+The insert tag is <ins>...</ins> used to show inserted/added text.
+The subscript tag is <sub>...</sub> used for lower text like H₂O.
+The superscript tag is <sup>...</sup> used for power like x².
+The underline tag is <u>...</u> used to underline text.
+The span tag is <span>...</span> used as a generic inline container for styling.
+The abbreviation tag is <abbr>...</abbr> used for short forms like WHO.
+The cite tag is <cite>...</cite> used for titles of works.
+The code tag is <code>...</code> used for displaying code text.
+The keyboard tag is <kbd>...</kbd> used for keyboard input like Ctrl+C.
+The sample tag is <samp>...</samp> used for sample output text.
+The variable tag is <var>...</var> used for variables in math/code. -->
+        </div>
+    </section>
+    <section id="Interactive-tags">
+        <div>
+            <h2><mark><strong>Interactive-tags</strong></mark></h2>
+            <p>What is interactive tags? <br> Interactive tags are HTML elements that allow the user to interact
+                with a webpage by clicking, typing, selecting, or submitting data. and example : see comments</p>
+            <!--They are
+ The anchor tag is <a>...</a> used to create clickable links that navigate to other pages or sections.
+The button tag is <button>...</button> used to perform actions when clicked like submit or open.
+The form tag is <form>...</form> used to collect user input and submit data to a server.
+The input tag is <input> used to take user input such as text, password, checkbox, or radio.
+The textarea tag is <textarea>...</textarea> used for multi-line text input from users.
+The select tag is <select>...</select> used to create dropdown menus for selecting options.
+The option tag is <option>...</option> used inside select to define each dropdown choice.
+The label tag is <label>...</label> used to describe input fields and improve usability.
+The details tag is <details>...</details> used to show or hide extra content when clicked.
+The summary tag is <summary>...</summary> used as a clickable heading for details content.
+The dialog tag is <dialog>...</dialog> used to create popup boxes or modal windows.
+The fieldset tag is <fieldset>...</fieldset> used to group related form elements together.
+The legend tag is <legend>...</legend> used as a title for a fieldset group.
+The output tag is <output>...</output> used to display results of calculations or user actions. -->
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2><strong><mark>Semantic-tags</mark></strong></h2>
+            <p>What are Semantic Tags in HTML? <br> Semantic tags are HTML elements that clearly describe their
+                meaning and purpose to both the browser and developers. and examples of tags : see comments </p>
+            <!-- They are
+     The header tag is <header> used for the top section of a webpage or section.
+The nav tag is <nav> used for navigation links or menus.
+The section tag is <section> used to group related content in a page.
+The article tag is <article> used for independent content like blogs or news.
+The aside tag is <aside> used for side content like ads or links.
+The footer tag is <footer> used for bottom section of a page.
+The main tag is <main> used for the main content of the webpage.
+The figure tag is <figure> used to group images, diagrams, or illustrations.
+The figcaption tag is <figcaption> used to give caption to a figure.
+The mark tag is <mark> used to highlight text.
+The time tag is <time> used to represent date or time.
+The details tag is <details> used to show or hide extra content.
+The summary tag is <summary> used as a clickable heading for details. -->
+            <p>Why semantic tags are used</p>
+            <ul>
+                <li>Make code easier to understand</li>
+                <li>Improve SEO (search engine ranking)</li>
+                <li>Help screen readers (accessibility)</li>
+                <li>Better structure of webpage</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2><strong><mark>Non Semantic-tags</mark></strong></h2>
+            <p>What are Non-Semantic Tags in HTML and give example? <br> Non-semantic tags are HTML elements that do
+                NOT describe the meaning of the content. They only tell the browser how to structure or group
+                content, but not what the content represents. and example see comment</p>
+            <!-- The div tag is <div> used as a general container to group elements.
+The span tag is <span> used to style small parts of text inside a line.
+The b tag is <b> used to make text bold without meaning.
+The i tag is <i> used to make text italic without meaning. -->
+            <p>Why they are used</p>
+            <ul>
+                <li>To group elements</li>
+                <li>To apply CSS styling</li>
+                <li>To build page layout</li>
+                <li>But they don't explain content meaning</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2><strong><mark>Attribute</mark></strong></h2>
+            <p>What are Attributes in HTML? <br> Attributes are special extra information added to HTML tags to
+                control how elements behave or look. and They are always written inside the opening tag.</p>
+            <p>What are types of Attributes?</p>
+            <ul>
+                <li>. Global Attributes (used in most tags)</li>
+                <li>. Element-specific Attributes or Local Attribute</li>
+            </ul>
+            <p>What is a Global Attribute in HTML? <br> Global attributes are attributes that can be used with any
+                HTML tag to control behavior, style, or metadata. and Examples of Global Attributes see comment</p>
+            <!--The id attribute is a global attribute used to give a unique identity to any HTML element.
+The class attribute is a global attribute used to group multiple elements for styling and CSS.
+The style attribute is a global attribute used to apply inline CSS directly to any HTML tag.
+The title attribute is a global attribute used to show tooltip text when the user hovers over an element.
+The lang attribute is a global attribute used to define the language of the content in an HTML page.
+The dir attribute is a global attribute used to set the text direction like left-to-right or right-to-left.
+The hidden attribute is a global attribute used to hide any HTML element from the webpage.
+The tabindex attribute is a global attribute used to control the keyboard tab order of elements.
+The contenteditable attribute is a global attribute used to make any HTML element editable by the user.
+The data-* attribute is a global attribute used to store custom data inside any HTML element.
+The accesskey attribute is a global attribute used to define a keyboard shortcut for any HTML element.
+The draggable attribute is a global attribute used to make an element draggable on the webpage.
+The spellcheck attribute is a global attribute used to enable or disable spelling and grammar checking.
+The translate attribute is a global attribute used to allow or prevent text translation by the browser.
+The autofocus attribute is a global attribute used to automatically focus an element when the page loads.
+The inert attribute is a global attribute used to make an element uninteractive and non-focusable.
+The is attribute is a global attribute used to define a customized built-in element.
+The part attribute is a global attribute used to style shadow DOM parts in web components.
+The slot attribute is a global attribute used to assign elements to specific slots in web components.
+The exportparts attribute is a global attribute used to expose shadow DOM parts to the outside styling.  -->
+            <p>What is a Local Attribute in HTML? <br>Local attributes are attributes that work only with specific
+                HTML tags, not all elements. and example of local attribute see comment</p>
+            <!--local attributes are
+The href attribute is used only in <a> tag to define link address.
+The src attribute is used only in <img>, <video>, and <audio> tags to define file source.
+The alt attribute is used only in <img> tag to show alternative text.
+The type attribute is used in <input>, <button>, and <ol> tags to define type.
+The value attribute is used in <input>, <option>, and <button> tags to set value.
+The placeholder attribute is used only in <input> and <textarea> tags.
+The checked attribute is used in checkbox and radio input elements.
+The selected attribute is used in <option> tag inside dropdown lists.
+The disabled attribute is used in form elements to disable input.
+The name attribute is used mainly in form elements to identify data. -->
+        </div>
+    </section>
+    <Section id="Data-collection">
+        <div>
+            <h2><strong><mark>Data collection</mark></strong></h2>
+            <p>What is Data Collection? <br> Data collection is the process of gathering information or facts from
+                different sources for analysis, decision-making, or use in systems.</p>
+            <p>What is a Form Element in Data Collection (HTML)? <br> it is block level element and form tag is
+                container is holding data taking relevent tags like input tags etc.,</p>
+        </div>
+    </Section>
+    <p>what are Elements used inside form tag? <br> see comments</p>
+    <!--The input tag is <input> used to take user input like text or password.
+The label tag is <label> used to describe input fields.
+The textarea tag is <textarea> used for multi-line text input.
+The select tag is <select> used for dropdown options.
+The option tag is <option> used inside select for choices.
+The button tag is <button> used to submit or reset form data.  -->
+    <p>What is the input tag in HTML? <br> The input tag is used in HTML forms to collect user data with different
+        types of input fields. and example see comments</p>
+    <!-- Attributes of <input> tag are
+The type attribute is used to define the type of input such as text, password, email, number, radio, or checkbox.
+The name attribute is used to identify the input field when form data is submitted.
+The value attribute is used to set a default value inside the input box.
+The placeholder attribute is used to show hint text inside the input field.
+The required attribute is used to make the input field mandatory before submitting the form.
+The readonly attribute is used to make input non-editable but selectable.
+The disabled attribute is used to make input field inactive and unclickable.
+The maxlength attribute is used to limit the number of characters allowed in input.
+The min and max attributes are used to set minimum and maximum values for number inputs.
+The step attribute is used to define step intervals for number inputs.
+The pattern attribute is used to set validation rules using regular expressions.
+The checked attribute is used to pre-select radio buttons or checkboxes.
+The autocomplete attribute is used to enable or disable browser autofill suggestions.
+The autofocus attribute is used to automatically focus the input when the page loads.
+The id attribute is used to give a unique identity to the input field.
+The class attribute is used to group input fields for CSS styling. -->
+    <P>What are type of values for input tag? <br> see comment</P>
+    <!-- text → for normal text input
+password → hides typed text
+email → for email input
+number → for numbers only
+radio → for single selection
+checkbox → for multiple selection
+file → to upload files
+date → for date selection
+submit → for submit button
+reset → to reset form -->
+    <p>What are Activity Attributes (Behavior-related attributes) <br> These attributes control what happens or how
+        the element behaves. <br>
+        The type attribute is an activity attribute used to define how the input behaves like text box, password
+        box, or checkbox.
+        The disabled attribute is an activity attribute used to make an element inactive so user cannot click or
+        edit it.
+        The readonly attribute is an activity attribute used to allow viewing but not editing the input field.
+        The autofocus attribute is an activity attribute used to automatically place cursor in input field when page
+        loads.
+        The autocomplete attribute is an activity attribute used to enable or disable browser suggestions while
+        typing.</p>
+    <p>What is Validation Attributes? <br>These attributes are used to check user input before submission. and
+        Examples are The required attribute is a validation attribute used to make input mandatory before form
+        submission.
+        The pattern attribute is a validation attribute used to check input using rules like regular expressions.
+        The min and max attributes are validation attributes used to set minimum and maximum allowed values.
+        The maxlength attribute is a validation attribute used to limit number of characters entered.
+        The type="email" attribute is a validation feature used to ensure correct email format.
+        The type="number" attribute is a validation feature used to allow only numeric values.</p>
+    <p>What is the select tag in HTML? <br>The select tag is used in HTML forms to create a drop-down list, where
+        users can choose one or more options.</p>
+    <p>What tags used with select tags</p>
+    <ul>
+        <li>The select tag is <select>...</select> used to create a dropdown list.</li>
+        <li>The option tag used to define each item inside the dropdown.</li>
+        <li>The optgroup tag is used to group related options inside a dropdown.</li>
+    </ul>
+    <p>What are Attributes of select tag? <br>The name attribute is used to identify the selected value when
+        submitting form data.
+        The multiple attribute is used to allow selecting more than one option.
+        The size attribute is used to show multiple options at once in list form.
+        The disabled attribute is used to make the dropdown inactive.
+        The required attribute is used to make selection mandatory before submitting form.
+        The autofocus attribute is used to automatically focus the dropdown when page loads.</p>
+    <p>What is the option tag in HTML? <br>The value attribute is used to send selected data to the server.
+        The selected attribute is used to set a default selected option.
+        The disabled attribute is used to disable a specific option.</p>
+    <section id="Data-Projection">
+        <div>
+            <h2><strong><mark>Data Projection</mark></strong></h2>
+            <p>What is Data projection? <br>Data projection is the method of organizing and displaying data in a
+                readable format like tables, charts, or graphs. <br> Data is often projected using: tables and ul ol
+                list <br></p>
+            <p>What is table tag in HTML? <br> The table tag is used to represent data in rows and columns.</p>
+            <p>Why table is used?</p>
+            <ul>
+                <li>To organize data clearly</li>
+                <li>To show records (like marks, list, prices)</li>
+                <li>To make data easy to read</li>
+            </ul>
+            <p>Tags used in Table : <br> The table tag is used to create a table structure. <br>
+                The table row tag is used to create a row in the table. <br>
+                The table heading tag is used to define header cells. <br>
+                The table data tag is used to store actual data in cells. <br>
+                The caption tag is used to give title to a table.</p>
+        </div>
+    </section>
+    <Section id="html5">
+        <div>
+            <h2><Strong><Mark>HTML5</Mark></Strong></h2>
+            <img src="../Assets/Images/html-logo.jpg" alt="LOGO" width="1500" height="350">
+            <p>What is Doctype html<br> !DOCTYPE html is called the document type declaration. It tells the browser
+                that the webpage is written in HTML5. Without DOCTYPE, browsers may enter quirks mode and render the
+                webpage incorrectly.</p>
+            <p>What are Meta Tags? <br>Meta tags provide information about the webpage to browsers, search engines,
+                and external services. These tags are written inside the head section and are not visible directly
+                on the webpage.</p>
+            <p>What is UTF? <br> Unicode Transformation Format</p>
+            <p>What is Favicon? <br> Favicon is the small icon shown in the browser tab near the webpage title.
+            </p>
+            <p>What are Open Graph (OG) Properties? <br>OG properties are meta tags used for social media sharing.
+                When links are shared on platforms like Facebook or LinkedIn, OG tags control how the preview
+                appears.</p>
+            <p>What is Audio Tag? <br>The audio tag is used to embed audio files inside webpages.</p>
+            <p>What is Video Tag? <br>The video tag is used to embed videos directly inside webpages.</p>
+            <p>What is iframe? <br> The iframe tag is used to embed another webpage inside the current webpage.</p>
+            <p>What is HTML5? <br>HTML5 is the latest version of HTML introduced to improve multimedia support,
+                semantic structure, and web application capabilities.</p>
+            <br>
 
-        </div></section>
-    </main>
-    <footer>
-        <div>jdakkkfk</div>
-    </footer>
+            <h4>Difference between HTML and HTML5</h4>
+
+            <table border="1">
+                <tr>
+                    <th>HTML</th>
+                    <th>HTML5</th>
+                </tr>
+
+                <tr>
+                    <td>Older version of HTML</td>
+                    <td>Latest version of HTML</td>
+                </tr>
+
+                <tr>
+                    <td>No support for multimedia directly</td>
+                    <td>Supports audio and video tags like audio and video</td>
+                </tr>
+
+                <tr>
+                    <td>No semantic tags</td>
+                    <td>Provides semantic tags like header, footer, section</td>
+                </tr>
+
+                <tr>
+                    <td>Needs plugins like Flash for media</td>
+                    <td>No plugins needed for media support</td>
+                </tr>
+
+                <tr>
+                    <td>Less support for mobile apps</td>
+                    <td>Mobile-friendly and responsive support</td>
+                </tr>
+
+                <tr>
+                    <td>No local storage</td>
+                    <td>Supports local storage and session storage</td>
+                </tr>
+
+            </table>
+        </div>
+    </Section>
 </body>
 
 </html>
