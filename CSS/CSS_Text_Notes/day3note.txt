@@ -1,0 +1,47 @@
+typography - text design
+
+font-size :20px
+
+font-family:san-serif
+
+color:blue
+
+font-weight:800
+
+Size -
+
+width:100px
+
+height:100px
+
+min-width:10px
+
+max-width:20px
+
+text -
+
+text-align:center
+
+Box Model:
+
+Box model is the core methods to handle the layout and design.
+
+they have 4 part is very important.
+
+1. Content - Normal text
+
+2. padding - Content Around space is the padding.
+
+if you have a content need some space around the text we need to use padding.
+
+3. border - Padding Around is the border. and border is the outline of padding. it give some color to highlight the content.
+
+looking like a box.
+
+4. margin - Border Around the space is called margin - and margin give the 4 side of the space. mainly used in css
+
+Parent
+
+child
+
+Wrapping
