@@ -1,0 +1,42 @@
+CSS -
+
+CSS Had a 3 types:
+
+inline -
+
+internal -
+
+External -
+
+Selectors - element - class, id, group , child selector, attribute selector
+
+Attributes - class, id, style
+
+inline - inline is to design a specific elements using style attribute . in the html file in the html tags or elements
+
+opening tags - <h1 style="propertie:value;propertie:value;">Content</h1>
+
+css - syntax - selector {propertie:""}
+
+<h1 style="property1:vlaue;property2:vlaue;property1:vlaue;">
+
+selector {
+
+pro:value;
+
+pro:value;
+
+pro:value;
+
+}
+
+selector {
+
+pro:value;
+
+pro:value;
+
+pro:value;
+
+}
+
