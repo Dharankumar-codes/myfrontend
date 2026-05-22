@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: solid violet 10px;
+    margin: 10px;
+}
+
+.content {padding: 10px;
+border: 10px;
+margin: 10px;
+text-align: center;}
+
+.image {width: 1px;
+height: 1px;
+margin-top: 30px;
+}

@@ -10,5 +10,12 @@
     padding: 30px;
     border: solid violet 20px;
     margin: 20px;
-    text-align: center;
+}
+
+.para {
+    background-color: red;
+    color: white;
+    padding: 30px;
+    border: solid blue 20px;
+    margin: 20px;
 }
