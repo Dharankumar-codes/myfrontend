@@ -10,8 +10,6 @@
     height: 300px;
     justify-content: center;
     gap: 60px;
-    
-
 }
 
 .child1{
@@ -49,6 +47,17 @@
     display: flex;
 
 }
+
+
+.child5{
+    background-color:moccasin;
+    padding: 50px;
+    margin: 20;
+    border: 30px;
+    display: flex;
+
+}
+
 
 
 
