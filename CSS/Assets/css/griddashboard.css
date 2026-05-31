@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+
+
+.navbar{
+    background:#031b3f;
+    color:white;
+    display:grid;
+    gap:20px;
+    padding:20px 40px;
+}
+
+.topbar{
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+}
+
+.left{
+    display:grid;
+    grid-auto-flow:column;
+    justify-content:start;
+    align-items:center;
+    gap:20px;
+}
+
+.right button,
+.left button{
+    padding:10px 20px;
+    border:1px solid #fff;
+    background:transparent;
+    color:white;
+    border-radius:5px;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(8,max-content);
+    gap:30px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+
+
+
+.container{
+    display:grid;
+    gap:30px;
+    padding:40px;
+}
+
+
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+
+    display:grid;
+    gap:25px;
+}
+
+a{text-decoration: none;}
+
+
+
+
+.thumbnail-card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+
+    display:grid;
+    gap:30px;
+}
+
+.thumbnail-content{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:40px;
+}
+
+
+
+.details{
+    display:grid;
+    gap:15px;
+    align-content:start;
+}
+
+.details button{
+    width:150px;
+    padding:12px;
+    background:#ff5b2e;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.trainer-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+
+    display:grid;
+    gap:30px;
+}
+
+.add-trainer{
+    text-decoration:none;
+    color:#4f6ef7;
+    font-size:20px;
+}
+
+.trainer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    align-items:center;
+}
+
+.trainer-info{
+    display:grid;
+    grid-template-columns:80px 1fr;
+    gap:20px;
+    align-items:center;
+}
+
+.trainer-info img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+}
+
+.trainer-role{
+    border-left:1px solid #ddd;
+    padding-left:30px;
+}
+
+.trainer-edit{
+    border-left:1px solid #ddd;
+    padding-left:30px;
+}
+
+.trainer-edit a{
+    text-decoration:none;
+    color:#4f6ef7;
+}
+
+.image-box{
+    width:350px;
+    height:250px;
+    border:2px dashed #ddd;
+    overflow:hidden;
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
