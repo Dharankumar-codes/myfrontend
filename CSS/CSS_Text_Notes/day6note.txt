@@ -1,0 +1,63 @@
+CSS - Units - PX, % , EM , REM
+
+Absolute , relative units -
+
+PX - Pixels.
+
+
+.
+
+% - change - to the parent Element
+
+CSS - COLORS
+
+CSS - Basic Setup
+
+margin
+
+padding
+
+box-sizing
+
+body {
+
+font-family:
+
+}
+
+html{
+
+scroll-behavior:smooth
+
+}
+
+ul{
+
+list-style:none
+
+}
+
+a {
+
+text-decoration:none
+
+}
+
+input {
+
+outline:none
+
+}
+
+body {
+
+overflow-x:hidden
+
+}
+
+section{
+
+min-height:100vh
+
+}
+
