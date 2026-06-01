@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:300px;
+    padding:20px;
+    text-align:center;
+    position:relative;
+    transition:0.5s;
+}
+
+.card::before{
+    content:"😎";
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:-10px;
+    left:-10px;
+}
+
+
+.card::after{
+    content:"💐";
+    width:40px;
+    height:40px;
+    position:absolute;
+    bottom:-10px;
+    right:-10px;
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    transition:0.8s;
+}
+
+.card input{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    text-align:center;
+}
+
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+
+.card:hover img{
+    transform:rotate(360deg);
+}
