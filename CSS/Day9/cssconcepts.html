@@ -1,55 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Concepts</title>
     <link rel="stylesheet" href="../Assets/designcss/cssconcepts.css">
 </head>
+
 <body>
 
-<header>
-    <h1>CSS Concepts</h1>
-    <p>Learn the basics of Cascading Style Sheets</p>
-</header>
+    <header>
+        <h1>CSS Concepts</h1>
+        <p>CSS is to design your webpage layout and style and it is helping for making a webpage looking good and user
+            friendly design</p>
+    </header>
 
-<section class="container">
+    <section class="container">
 
-    <div class="card">
-        <h2>Selectors</h2>
-        <p>Selectors are used to target HTML elements and apply styles.</p>
-    </div>
+        <div class="card">
+            <h2>Layout</h2>
+            <p>layout is the design of your webpage it decide which content in which place to shown on your screen</p>
+        </div>
 
-    <div class="card">
-        <h2>Box Model</h2>
-        <p>The box model consists of margin, border, padding, and content.</p>
-    </div>
+        <div class="card">
+            <h2>Cascading</h2>
+            <p>it is a multiple styles can apply to single element and browser decides which style should win</p>
+        </div>
 
-    <div class="card">
-        <h2>Flexbox</h2>
-        <p>Flexbox helps create flexible and responsive layouts.</p>
-    </div>
 
-    <div class="card">
-        <h2>Grid</h2>
-        <p>CSS Grid is used for creating two-dimensional layouts.</p>
-    </div>
+        <div class="card">
+            <h2>CSS Styling</h2>
+            <p>CSS Styling means applying visual designs such as colors, backgrounds, fonts, layouts, animations, and
+                effects to HTML elements</p>
+        </div>
 
-    <div class="card">
-        <h2>Animations</h2>
-        <p>Animations make websites interactive and visually appealing.</p>
-    </div>
+        <div class="card">
+            <h2>Types of CSS</h2>
+            <ul>
+                <li>Inline css</li>
+                <li>Internal css</li>
+                <li>External css</li>
+            </ul>
 
-    <div class="card">
-        <h2>Pseudo Classes</h2>
-        <p>:hover, :focus and :active are common pseudo-classes.</p>
-    </div>
+        </div>
 
-</section>
 
-<footer>
-    <p>Created by Dharan Kumar</p>
-</footer>
+        <div class="card">
+            <h2>CSS Pirority order</h2>
+            <p>Browser reads style this orderwise</p>
+            <ul>
+                <li>Inline style</li>
+                <li>Id Selector</li>
+                <li>Class Selector</li>
+                <li>Element selector</li>
+                <li>Universal Selector</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>CSS Specificity</h2>
+            <p>Specificity is the Pirority calculation system used by browser to determine which css rule should apply
+                when multiple styles are rules target at the same element</p>
+        </div>
+
+
+        <div class="card">
+            <h2>Selectors</h2>
+            <p>Selectors are used to target HTML elements and apply styles.</p>
+            <ul>
+                <li>* - Universal Selector</li>
+                <li>. - class Selector</li>
+                <li># - id selector</li>
+                <li>, - group selector</li>
+                <li>space - Descendant selctor</li>
+                <li>div>p - child selector</li>
+                <li>attribute selector</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Typography</h2>
+            <p>It is a test design like font size and font family and font weight </p>
+        </div>
+
+        <div class="card">
+            <h2>Box Model</h2>
+            <p>The box model consists of margin, border, padding, and content.</p>
+        </div>
+
+        <div class="card">
+            <h2>Flex</h2>
+            <p>Flex is one dimenisional layout it works row or coloum to make a responsive webpage layout and flex is
+                helping to split the webpages and align the context row or coloum vias and flex is the most used layout
+                system in css</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS Units</h2>
+            <p>CSS units are used to define the size of elements text, spacing, width, height, marign, border, padding
+                and layout inside a webpage and without unit browser can't understand the how much size and spacing
+                applied to element</p>
+            <h4>Types of Units</h4>
+            <ul>
+                <li>Absolute unit that is pixel(px)</li>
+                <li>Relative unit are persentage(%), EM and REM units.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Grid</h2>
+            <p>Grid is a two dimensional layout we can design row and coloum vias at same time and we can create a
+                complex responsive layout using grid mainly we use grid for dashboard layouts website section cards
+                design and gallary layout</p>
+        </div>
+
+        <div class="card">
+            <h2>Pseudo Classes</h2>
+            <p>it is a special keyword in css use to define a special state in html element so it also developers to
+                apply style when certain user interaction. pseudo class are widely used modern frontent development
+                symbole is : colon. they are :hover, :focus and :active are common pseudo-classes.</p>
+        </div>
+
+        <div class="card">
+            <h2>Pseudo Element</h2>
+            <p>It is use to style specific part of an html element instead of the entire element they are written using
+                double :: colon they are ::before, ::After, ::First letter, :: First Line, :: Selection</p>
+        </div>
+
+        <div class="card">
+            <h2>Animations</h2>
+            <p>It is a property visually manipulate the html element without affecting document page and it properties
+                are transform and transition</p>
+            <ul>
+                <li>transform value are translate, skew, rotate, scale. </li>
+                <li>transition values are ease, linear, ease-in, ease-out, ease-in-out </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Position</h2>
+            <p>Position is one of most important css property used in frontend development it controls how an element
+                displace inside the element by default all html element follow the normal document flow and some
+                elements appear one below another from top to bottom</p>
+            <p>Values of Position are relative and Absoluteand fixed and sticky</p>
+        </div>
+
+        <div class="card">
+            <h2>Media Query</h2>
+            <p>media query is concept used in responsive webdesign and its allows developers to apply difference css
+                style based on screen width and screen height device type. orientation landscape and portarit</p>
+        </div>
+
+        <div class="container">
+
+            <div class="card1">
+                <h2>CSS</h2>
+                <ul>
+                    <li>Basic styling (colors, fonts)</li>
+                    <li>No animations</li>
+                    <li>No transitions</li>
+                    <li>No flex/grid</li>
+                    <li>Simple layouts</li>
+                </ul>
+
+
+
+                <h2>CSS3</h2>
+                <ul>
+                    <li>Advanced styling features</li>
+                    <li>Animations & transitions</li>
+                    <li>Flexbox & Grid layout</li>
+                    <li>Transform effects</li>
+                    <li>Responsive design (media queries)</li>
+                </ul>
+
+
+            </div>
+
+
+
+    </section>
+
+    <footer>
+        <p>Created by Dharan Kumar</p>
+    </footer>
 
 </body>
+
 </html>
