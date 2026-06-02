@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    height: 100vh;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: lightpink;
+    padding: 20px;
+}
+
+.card img {
+    width: 200px;
+    height: 220px;
+    border-radius: 10px;
+
+
+}
+
+h2 {
+    margin: 10px;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+button,
+input {
+    width: 100px;
+    height: 30px;
+    margin: 2px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+    color: red;
+    background-color: blue;
+    transform: scale(1.1);
+    transition: 1s;
+}
