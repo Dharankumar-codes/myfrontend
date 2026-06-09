@@ -1,116 +1,314 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Task</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharan Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <h1>TASK LISTS</h1>
-    <div>
-        <h2>Day 4</h2>
-        <a href="HTML/Day4/Assignment1.html">Assignments 1</a><br>
-        <a href="HTML/Day4/Assignment2.html">Assignments 2</a>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <header class="bg-slate-900 text-white sticky top-0 shadow-lg z-50">
+        <nav class="container mx-auto flex justify-between items-center p-5">
+            <h1 class="text-2xl font-bold">Dharan Portfolio</h1>
+
+            <ul class="flex gap-6 text-sm md:text-base">
+                <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+                <li><a href="#tasks" class="hover:text-yellow-400">Tasks</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24">
+        <div class="container mx-auto text-center px-5">
+            <h2 class="text-5xl font-bold mb-4">Hi, I'm Dharan Kumar</h2>
+            <p class="text-xl mb-6">Frontend Developer | HTML | CSS | Bootstrap | Tailwind CSS | JavaScript</p>
+
+            <a href="#projects"
+                class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-5">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+                About Me
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+
+                <!-- Image -->
+                <div class="flex justify-center">
+                    <img src="https://via.placeholder.com/350"
+                        alt="Profile Image"
+                        class="rounded-2xl shadow-xl">
+                </div>
+
+                <!-- Summary -->
+                <div>
+                    <h3 class="text-3xl font-semibold mb-4">
+                        Front-End Developer
+                    </h3>
+
+                    <p class="text-gray-600 leading-8">
+                        I am Dharan Kumar, a passionate Front-End Developer
+                        currently learning modern web development technologies.
+                        I enjoy creating responsive websites using HTML5, CSS3,
+                        Bootstrap, Tailwind CSS, and JavaScript.
+
+                        I have completed multiple assignments, responsive layouts,
+                        dashboards, forms, landing pages, image galleries, and
+                        portfolio projects as part of my training journey.
+
+                        My goal is to become a professional Full Stack Developer
+                        and build user-friendly web applications.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-5">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Skills
+            </h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition">
+                    <h3 class="text-xl font-bold text-center">HTML5</h3>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition">
+                    <h3 class="text-xl font-bold text-center">CSS3</h3>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition">
+                    <h3 class="text-xl font-bold text-center">Bootstrap</h3>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition">
+                    <h3 class="text-xl font-bold text-center">Tailwind CSS</h3>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition">
+                    <h3 class="text-xl font-bold text-center">JavaScript</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tasks Section -->
+    <section id="tasks" class="py-20 bg-white">
+        <div class="container mx-auto px-5">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Tasks Completed
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                    <h3 class="font-bold text-xl mb-2">HTML Tasks</h3>
+                    <p>Forms, Tables, Complete Website, Stock Market Page</p>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+
+    <h3 class="text-2xl font-bold mb-4 text-blue-600">
+        HTML Tasks
+    </h3>
+
+    <ul class="space-y-2">
+
+        <li>
+            <a href="HTML/Day4/Assignment1.html"
+                target="_blank"
+                class="block bg-gray-100 p-3 rounded hover:bg-blue-100 hover:text-blue-700">
+                Assignment 1
+            </a>
+        </li>
+
+        <li>
+            <a href="HTML/Day4/Assignment2.html"
+                target="_blank"
+                class="block bg-gray-100 p-3 rounded hover:bg-blue-100 hover:text-blue-700">
+                Assignment 2
+            </a>
+        </li>
+
+        <li>
+            <a href="HTML/Day5/StockMarket.html"
+                target="_blank"
+                class="block bg-gray-100 p-3 rounded hover:bg-blue-100 hover:text-blue-700">
+                Stock Market Task
+            </a>
+        </li>
+
+        <li>
+            <a href="HTML/Day6/Form-jion-luffy.html"
+                target="_blank"
+                class="block bg-gray-100 p-3 rounded hover:bg-blue-100 hover:text-blue-700">
+                Form Task
+            </a>
+        </li>
+
+        <li>
+            <a href="HTML/Day7/Form-and-table.html"
+                target="_blank"
+                class="block bg-gray-100 p-3 rounded hover:bg-blue-100 hover:text-blue-700">
+                Form & Table Task
+            </a>
+        </li>
+
+        <li>
+            <a href="HTML/Day8/Complete_website.html"
+                target="_blank"
+                class="block bg-gray-100 p-3 rounded hover:bg-blue-100 hover:text-blue-700">
+                Complete Website
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                    <h3 class="font-bold text-xl mb-2">CSS Tasks</h3>
+                    <p>Flexbox, Grid, Navbar, Cards, Dashboard Layouts</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                    <h3 class="font-bold text-xl mb-2">Bootstrap Tasks</h3>
+                    <p>Responsive Layouts and Components</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                    <h3 class="font-bold text-xl mb-2">Tailwind Tasks</h3>
+                    <p>Navbar, Cards, Gallery, Profile Card, Responsive UI</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                    <h3 class="font-bold text-xl mb-2">JavaScript Tasks</h3>
+                    <p>Variables, Data Types, Console Output Practice</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                    <h3 class="font-bold text-xl mb-2">Mini Projects</h3>
+                    <p>Landing Pages, Dashboards and Portfolio Websites</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-5">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Projects
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">Student Portfolio</h3>
+                    <p>Personal portfolio website built using Tailwind CSS.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">Responsive Dashboard</h3>
+                    <p>Admin dashboard built using CSS Grid and Flexbox.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">Business Landing Page</h3>
+                    <p>Modern landing page using HTML, CSS, Bootstrap.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-5">
+
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Contact Me
+        </h2>
+
+        <div class="max-w-3xl mx-auto bg-gray-100 p-8 rounded-xl shadow-lg">
+
+            <form>
+
+                <div class="mb-4">
+                    <label class="block mb-2 font-semibold">Name</label>
+                    <input type="text"
+                        placeholder="Enter your name"
+                        class="w-full p-3 border rounded-lg">
+                </div>
+
+                <div class="mb-4">
+                    <label class="block mb-2 font-semibold">Email</label>
+                    <input type="email"
+                        placeholder="Enter your email"
+                        class="w-full p-3 border rounded-lg">
+                </div>
+
+                <div class="mb-4">
+                    <label class="block mb-2 font-semibold">Message</label>
+                    <textarea rows="5"
+                        placeholder="Enter your message"
+                        class="w-full p-3 border rounded-lg"></textarea>
+                </div>
+
+                <button
+                    class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
     </div>
-    <br>
-    <div><a href="HTML/Day5/StockMarket.html">Day 5 Assignment</a></div>
-    <div><a href="HTML/Day6/Form-jion-luffy.html">Day 6 Assignment</a></div>
-    <div><a href="HTML/Day7/Form-and-table.html">Day 7 Assignment</a></div>
-    <div><a href="HTML/Day8/Complete_website.html">Day 8 Assignment</a></div>
-    <div><a href="HTML/Test/Test1.html">html Test</a></div>
-    <div><a href="HTML/Test/Task-for-HTML.html">HTML Complete Task Test</a></div>
-    <div><a href="CSS/Day1/inlinecss.html">Day1 css-Task1</a></div>
-    <div><a href="CSS/Day1/internalcss.html">Day1 css-Task2</a></div>
-    <div><a href="CSS/Day1/externalcss.html">Day1 css-Task3</a></div>
-    <div><a href="CSS/Day1/writentask.txt">Day1 css-Task4</a></div>
-    <div><a href="CSS/Day2/selectorcss.html">Day2 Css Task</a></div>
-    <div><a href="CSS/Day3/box1.html">Day3 box1 Task</a></div>
-    <div><a href="CSS/Day3/box2.html">Day3 box2 Task</a></div>
-    <div><a href="CSS/Day3/box3.html">Day3 box3 Task</a></div>
-    <div><a href="CSS/Day4/5boxcreation.html">Day4 Task1</a></div>
-    <div><a href="CSS/Day4/navbar.html">Day4 Task2</a></div>
-    <div><a href="CSS/Day4/cardsflex.html">Day4 Task3</a></div>
-    <div><a href="CSS/Day5/trillionare.html">Day5 Task</a></div>
-    <div><a href="CSS/Day6/figma.html">Day6 Task</a></div>
-    <div><a href="CSS/Day7/griddashboard.html">Day7 Task</a></div>
-    <div>
-        <ul>
-            <h5>Day8 Task</h5>
-            <li>
-                <a href="CSS/Day8/hoverpsedo.html">hoverpsedo task1</a>
-            </li>
-            <li><a href="CSS/Day8/buttonanimation.html">buttonanimation task2</a>
-            </li>
-            <li><a href="CSS/Day8/profileanimation.html">profileanimation task3</a></li>
-            <li><a href="CSS/Day8/imagegallary.html">imagegallary task4</a></li>
-            <li><a href="CSS/Day8/dashboardanimation.html">dashboardanimation task5</a></li>
-        </ul>
-    </div>
-    <div>
-        <ul>
-            <h5>Day9 Task</h5>
-            <li>
-                <a href="CSS/Day9/cssconcepts.html">cssconcepts task</a>
-            </li>
+</section>
 
-        </ul>
-    </div>
-    <div>
-        <h3>BOOTSTRAP</h3>
-        <a href="BOOTSTRAP/Day1/bootstrap.html">Day1 Task</a>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-2">
+                Dharan Kumar
+            </h3>
 
-    <div>
-        <h3>Tailwindcss</h3>
-        <h5>Day1 Task</h5>
-        <ul>
-            <li>
-                <a href="TAILWIND/DAY1/task1.html">task1 card</a>
-            </li>
-            <li><a href="TAILWIND/DAY1/task2.html">task2 responsive layout</a>
-            </li>
-            <li><a href="TAILWIND/DAY1/task3.html">task3 navbar</a></li>
-            <li><a href="TAILWIND/DAY1/task4.html">task4 profile card</a></li>
-            <li><a href="TAILWIND/DAY1/task5.html">task5 imagegallary</a></li>
-        </ul>
+            <p>
+                Front-End Developer | HTML | CSS | Bootstrap | Tailwind | JavaScript
+            </p>
 
-    </div>
-
-    <div>
-        <h3>Using BOOTSTRAP and CSS</h3>
-        <h5>Day2 Task</h5>
-        <ul>
-            <li>
-                <a href="TAILWIND/Day2/task1.html">task1</a>
-            </li>
-            <li><a href="TAILWIND/Day2/task2.html">task2</a>
-            </li>
-            <li><a href="TAILWIND/Day2/task3.html">task3</a></li>
-
-        </ul>
-
-    </div>
-
-    <div>
-        <h3>JS Tasks</h3>
-        <h5>Day1 Task</h5>
-        <a href="JS/Day1/Task1/introjs.html">introjs</a>
-        <a href="JS/Day1/Task1/var20.html">var20</a>
-        <a href="JS/Day1/Task1/let30.html">let30</a>
-        <a href="JS/Day1/Task1/const30.html">const30</a>
-        
-        
-        <h5>Day2 Task</h5>
-        <a href="JS/Day2/Task/datatypes.html">datatypes task</a>
-        <a href="JS/Day2/Task/letprint.html">letprint task</a>
-        <a href="JS/Day2/Task/constprint.html">constprint task</a>
-    </div>
-
-
-
-
-
-
+            <p class="mt-4 text-gray-400">
+                © 2026 All Rights Reserved.
+            </p>
+        </div>
+    </footer>
 
 </body>
-
 </html>
+```
