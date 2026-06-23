@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es6 Features tasks</title>
+</head>
+<body>
+    <SCript>
+      
+// Task 1 - let
+
+
+let name = "Dharan";
+console.log("Original Name:", name);
+
+name = "Dharan Kumar";
+console.log("Updated Name:", name);
+
+
+
+// Task 2 - let Scope
+
+
+if (true) {
+    let message = "Inside Block";
+    console.log(message);
+}
+
+// console.log(message);
+
+
+
+
+// Task 3 - const
+
+
+const courseName = "JavaScript";
+console.log(courseName);
+
+// courseName = "React";
+
+
+
+
+// Task 4 - Arrow Function
+
+
+const greet = () => {
+    console.log("Welcome To JavaScript");
+};
+
+greet();
+
+
+
+// Task 5 - Arrow Function With Parameters
+
+
+const showHero = (heroName) => {
+    console.log(`Hero Name : ${heroName}`);
+};
+
+showHero("Vijay");
+
+
+
+// Task 6 - Arrow Function Addition
+
+
+const add = (a, b) => {
+    console.log(a + b);
+};
+
+add(10, 20);
+
+
+
+// Task 7 - Template Literals
+
+
+let hero = "Vijay";
+
+console.log(`My Favourite Hero is ${hero}`);
+
+
+
+// Task 8 - Template Literals Multiple Values
+
+
+let studentName = "Dharan";
+let course = "MERN";
+let city = "Chennai";
+
+console.log(
+    `My name is ${studentName}, I am studying ${course} and I live in ${city}.`
+);
+
+
+
+// Task 9 - Array Destructuring
+
+
+const heroes = ["Vijay", "Ajith", "Suriya"];
+
+const [hero1, hero2] = heroes;
+
+console.log("Hero1:", hero1);
+console.log("Hero2:", hero2);
+
+
+
+// Task 10 - Object Destructuring
+
+
+const student = {
+    name: "Sudhan",
+    course: "MERN",
+    city: "Chennai"
+};
+
+const { name: studentName2, course: studentCourse } = student;
+
+console.log("Name:", studentName2);
+console.log("Course:", studentCourse);
+    </SCript>
+</body>
+</html>
