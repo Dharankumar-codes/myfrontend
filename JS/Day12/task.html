@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+<body>
+    <script>
+        
+// 🟢 map() Tasks
+
+
+// Task 1
+const heroes1 = ["Vijay", "Ajith", "Suriya"];
+
+const upperHeroes = heroes1.map(hero => hero.toUpperCase());
+console.log("Task 1:", upperHeroes);
+
+// Task 2
+const collections1 = [100, 200, 300, 400];
+
+const multipliedCollections = collections1.map(collection => collection * 10);
+console.log("Task 2:", multipliedCollections);
+
+// Task 3
+const movies1 = ["GOAT", "Leo", "Master"];
+
+const movieNames = movies1.map(movie => `Movie : ${movie}`);
+console.log("Task 3:", movieNames);
+
+
+
+// 🟡 filter() Tasks
+
+
+// Task 4
+const collections2 = [100, 500, 800, 200, 900];
+
+const greaterThan500 = collections2.filter(collection => collection > 500);
+console.log("Task 4:", greaterThan500);
+
+// Task 5
+const marks1 = [35, 80, 20, 90, 45];
+
+const passedStudents = marks1.filter(mark => mark >= 35);
+console.log("Task 5:", passedStudents);
+
+// Task 6
+const heroes2 = ["Vijay", "Ajith", "SK", "Suriya"];
+
+const longNames = heroes2.filter(hero => hero.length > 4);
+console.log("Task 6:", longNames);
+
+
+
+// 🟠 find() Tasks
+
+
+// Task 7
+const heroes3 = ["Vijay", "Ajith", "Suriya"];
+
+const foundHero = heroes3.find(hero => hero === "Ajith");
+console.log("Task 7:", foundHero);
+
+// Task 8
+const collections3 = [100, 500, 800, 200];
+
+const firstGreaterThan400 = collections3.find(collection => collection > 400);
+console.log("Task 8:", firstGreaterThan400);
+
+
+
+// 🔵 findIndex() Tasks
+
+
+// Task 9
+const heroes4 = ["Vijay", "Ajith", "Suriya"];
+
+const suriyaIndex = heroes4.findIndex(hero => hero === "Suriya");
+console.log("Task 9:", suriyaIndex);
+
+// Task 10
+const movies2 = ["GOAT", "Leo", "Master"];
+
+const leoIndex = movies2.findIndex(movie => movie === "Leo");
+console.log("Task 10:", leoIndex);
+
+
+
+// 🟣 some() Tasks
+
+
+// Task 11
+const marks2 = [35, 80, 20, 90];
+
+const hasFailedStudent = marks2.some(mark => mark < 35);
+console.log("Task 11:", hasFailedStudent);
+
+// Task 12
+const collections4 = [100, 200, 900];
+
+const crossed800 = collections4.some(collection => collection > 800);
+console.log("Task 12:", crossed800);
+
+
+
+// 🟤 every() Tasks
+
+
+// Task 13
+const marks3 = [50, 70, 90, 40];
+
+const allPassed = marks3.every(mark => mark >= 35);
+console.log("Task 13:", allPassed);
+
+// Task 14
+const ages = [20, 25, 30, 35];
+
+const allAbove18 = ages.every(age => age > 18);
+console.log("Task 14:", allAbove18);
+
+
+
+// 🔴 reduce() Tasks
+
+
+// Task 15
+const collections5 = [100, 200, 300, 400];
+
+const totalCollection = collections5.reduce(
+  (total, collection) => total + collection,
+  0
+);
+
+console.log("Task 15:", totalCollection);
+
+
+
+// 🚀 Array of Objects Tasks
+
+
+// Task 18
+const students1 = [
+  { id: 1, name: "Sudhan" },
+  { id: 2, name: "Rahul" }
+];
+
+const studentNames = students1.map(student => student.name);
+console.log("Task 18:", studentNames);
+
+// Task 19
+const students2 = [
+  { id: 1, age: 20 },
+  { id: 2, age: 30 },
+  { id: 3, age: 18 }
+];
+
+const ageAbove20 = students2.filter(student => student.age > 20);
+console.log("Task 19:", ageAbove20);
+
+// Task 20
+const students3 = [
+  { id: 1, name: "Sudhan" },
+  { id: 2, name: "Rahul" }
+];
+
+const studentId2 = students3.find(student => student.id === 2);
+console.log("Task 20:", studentId2);
+    </script>
+</body>
+</html>
