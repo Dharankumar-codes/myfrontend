@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register & Display</title>
+    <style>
+        .card {
+            width: 250px;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+    <br><br>
+
+    <input type="email" id="email" placeholder="Enter Email">
+    <br><br>
+
+    <input type="number" id="age" placeholder="Enter Age">
+    <br><br>
+
+    <button onclick="register()">Register</button>
+
+    <div class="card" id="card">
+        <h3>User Details</h3>
+        <p id="displayName">Name :</p>
+        <p id="displayEmail">Email :</p>
+        <p id="displayAge">Age :</p>
+    </div>
+
+    <script>
+        function register() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let age = document.getElementById("age").value;
+
+            document.getElementById("displayName").textContent =
+                `Name : ${name}`;
+
+            document.getElementById("displayEmail").textContent =
+                `Email : ${email}`;
+
+            document.getElementById("displayAge").textContent =
+                `Age : ${age}`;
+        }
+    </script>
+
+</body>
+</html>

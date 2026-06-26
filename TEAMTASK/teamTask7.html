@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Validation</title>
+    <link rel="stylesheet" href="CSS/cssTask7.css">
+</head>
+<body>
+
+    <input type="text" id="username" placeholder="Enter Username">
+    <br><br>
+
+    <input type="password" id="password" placeholder="Enter Password">
+    <br><br>
+
+    <button onclick="login()">Login</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "12345") {
+                document.getElementById("result").textContent = "Login Success";
+            } else {
+                document.getElementById("result").textContent = "Invalid Login";
+            }
+        }
+    </script>
+
+</body>
+</html>
