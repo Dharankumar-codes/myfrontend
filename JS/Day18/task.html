@@ -1,213 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>API & Local Storage Assignment</title>
-
-<!-- <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    padding:20px;
-    background:#f4f4f4;
-}
-
-h1,h2{
-    margin:20px 0;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#fff;
-    padding:15px;
-    border-radius:10px;
-    box-shadow:0 2px 5px rgba(0,0,0,0.2);
-}
-
-.card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.card h3{
-    margin:10px 0;
-}
-
-form{
-    background:#fff;
-    padding:20px;
-    border-radius:10px;
-    margin-bottom:20px;
-}
-
-input{
-    width:100%;
-    padding:10px;
-    margin:10px 0;
-}
-
-button{
-    padding:10px 15px;
-    cursor:pointer;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    background:#fff;
-}
-
-th,td{
-    border:1px solid #ddd;
-    padding:10px;
-    text-align:center;
-}
-
-th{
-    background:#333;
-    color:white;
-}
-
-.delete-btn{
-    background:red;
-    color:white;
-    border:none;
-    padding:5px 10px;
-}
-</style> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Table</title>
 </head>
 <body>
 
-<h1>Products (Fetch API)</h1>
-
-<div class="cards" id="productContainer"></div>
-
-<h2>Student Form (Local Storage)</h2>
-
-<form id="userForm">
-    <input type="text" id="name" placeholder="Enter Name" required>
-    <input type="email" id="email" placeholder="Enter Email" required>
-    <input type="number" id="age" placeholder="Enter Age" required>
-    <button type="submit">Save</button>
-</form>
-
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Age</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody id="tableBody"></tbody>
-</table>
-
-<script>
-
-// ---------------- Fetch API ----------------
-
-const productContainer = document.getElementById("productContainer");
-
-async function getProducts(){
-    try{
-        const response = await fetch("https://dummyjson.com/products");
-        const data = await response.json();
-
-        data.products.forEach(product => {
-            productContainer.innerHTML += `
-                <div class="card">
-                    <img src="${product.thumbnail}" alt="${product.title}">
-                    <h3>${product.title}</h3>
-                    <p><strong>Price:</strong> $${product.price}</p>
-                    <p><strong>Category:</strong> ${product.category}</p>
-                </div>
-            `;
-        });
-
-    }catch(error){
-        console.log(error);
-    }
-}
-
-getProducts();
-
-
-// ---------------- Local Storage ----------------
-
-const form = document.getElementById("userForm");
-const tableBody = document.getElementById("tableBody");
-
-let users = JSON.parse(localStorage.getItem("users")) || [];
-
-displayData();
-
-form.addEventListener("submit", function(e){
-    e.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const age = document.getElementById("age").value;
-
-    const user = {
-        name,
-        email,
-        age
-    };
-
-    users.push(user);
-
-    localStorage.setItem("users", JSON.stringify(users));
-
-    displayData();
-
-    form.reset();
-});
-
-function displayData(){
-
-    tableBody.innerHTML = "";
-
-    users.forEach((user,index)=>{
-
-        tableBody.innerHTML += `
+    <table border="1">
+        <thead>
             <tr>
-                <td>${user.name}</td>
-                <td>${user.email}</td>
-                <td>${user.age}</td>
-                <td>
-                    <button class="delete-btn" onclick="deleteUser(${index})">
-                        Delete
-                    </button>
-                </td>
+                <th>S.NO</th>
+                <th>Name</th>
+                <th>Servings</th>
+                <th>Difficulty</th>
             </tr>
-        `;
-    });
-}
+        </thead>
 
-function deleteUser(index){
+        <tbody id="user"></tbody>
+    </table>
 
-    users.splice(index,1);
+    <script>
 
-    localStorage.setItem("users", JSON.stringify(users));
+        async function getData() {
 
-    displayData();
-}
+            const res = await fetch("https://dummyjson.com/recipes");
+            const data = await res.json();
 
-</script>
+            // Save in localStorage
+            localStorage.setItem("recipes", JSON.stringify(data.recipes));
+
+            // Get data from localStorage
+            const recipes = JSON.parse(localStorage.getItem("recipes"));
+
+            const table = document.getElementById("user");
+
+            recipes.forEach(function(item, index) {
+
+                table.innerHTML += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${item.name}</td>
+                        <td>${item.servings}</td>
+                        <td>${item.difficulty}</td>
+                    </tr>
+                `;
+
+            });
+        }
+
+        getData();
+
+    </script>
 
 </body>
 </html>
