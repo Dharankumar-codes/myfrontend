@@ -1,0 +1,13 @@
+Global Scope - when declare or init the value globally
+
+using var, let , const
+
+Functional Scope - var
+
+block scope - let, const
+
+lexical scope - parent -> child -
+
+write a function using parameter and argument name like name and amount
+
+amount +

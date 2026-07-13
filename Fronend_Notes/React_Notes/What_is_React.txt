@@ -1,0 +1,19 @@
+REACT
+
+NODE -
+
+React -
+
+CREATE Phase -
+
+PROJECT SETUP
+
+WE HAVE 2 VERSIONS - CRA - PORT - 3000 - BABLE TR - WEBPACK(BUNDLER)
+
+- VITE/8 - oxc - ES BUILD
+
+CAMMEDS -
+
+CRA - npx create-react-app projectname
+
+VITE - npm create vite@latest projectname
