@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: lightblue;
+            color: white;
+        }
+
+        .Logo {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            font-size: large;
+        }
+
+        .sub {
+            display: flex;
+            gap: 10px;
+            font-size: large;
+            margin-right: 40px;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Logo">Logo</div>
+        <div class="sub"><a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contacts</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
