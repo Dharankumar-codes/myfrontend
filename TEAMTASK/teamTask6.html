@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Message</title>
+    <link rel="stylesheet" href="CSS/cssTask6.css">
+</head>
+<body>
+
+   <div><input type="text" id="username" placeholder="Enter your name">
+
+    <button onclick="showWelcome()">
+        Submit
+    </button>
+
+    <h1 id="message"></h1></div> 
+
+
+    <script>
+        function showWelcome() {
+            let name = document.getElementById("username").value;
+            document.getElementById("message").textContent = `Welcome ${name}`;
+        }
+        
+    </script>
+
+</body>
+</html>

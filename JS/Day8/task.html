@@ -1,0 +1,93 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array and Object Tasks</title>
+</head>
+<body>
+
+<script>
+
+// Task 1 – Push & Pop (Movie List)
+
+let movies = ["GOAT", "Leo", "Master"];
+
+movies.push("Ghilli");
+movies.pop();
+
+console.log("Task 1 Output:");
+console.log(movies);
+
+
+// Task 2 – Shift & Unshift (Hero List)
+
+let heroes = ["Ajith", "Suriya", "SK"];
+
+heroes.unshift("Vijay");
+heroes.shift();
+
+console.log("Task 2 Output:");
+console.log(heroes);
+
+
+// Task 3 – Fruits Management
+
+let fruits = ["Apple", "Mango", "Orange"];
+
+fruits.push("Banana", "Grapes");
+fruits.pop();
+fruits.unshift("Pineapple");
+fruits.shift();
+
+console.log("Task 3 Output:");
+console.log(fruits);
+
+
+// Task 4 – Student Object
+
+let student = {
+    name: "Sudhan",
+    course: "MERN",
+    city: "Chennai"
+};
+
+console.log("Task 4 Output:");
+
+// Dot Notation
+console.log(student.name);
+console.log(student.course);
+console.log(student.city);
+
+// Bracket Notation
+console.log(student["name"]);
+console.log(student["course"]);
+console.log(student["city"]);
+
+
+// Task 5 – Mobile Store (Array of Objects)
+
+let mobiles = [
+    {
+        brand: "Samsung",
+        price: 20000
+    },
+    {
+        brand: "iPhone",
+        price: 80000
+    },
+    {
+        brand: "OnePlus",
+        price: 35000
+    }
+];
+
+console.log("Task 5 Output:");
+
+for (let i = 0; i < mobiles.length; i++) {
+    console.log(mobiles[i].brand + " - " + mobiles[i].price);
+}
+
+</script>
+
+</body>
+</html>

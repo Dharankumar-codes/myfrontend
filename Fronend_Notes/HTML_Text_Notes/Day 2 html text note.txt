@@ -1,0 +1,84 @@
+FOLDER
+
+FILE - HTML - Browsers
+
+HTML
+
+TAGS
+
+3 - tags
+
+ELEMENTS
+
+ROOT
+
+CONTAINER
+
+Head - title - Browser tabs
+
+body -
+
+CHILD
+
+h1 - h6
+
+p
+
+Story
+
+Block Level -
+
+it is always start with New line.
+
+it is like a container to hold the many content or tags inside the block level
+
+it always take a full width of the screen.
+
+Block level are building your basic structure
+
+What are all the block level tags -
+
+h1 to h6
+
+p
+
+form
+
+Inline level element -
+
+1. its not start with new line.
+
+2. its take the content width.
+
+3. inside a inline you will add any inline
+
+4. inside a block level also you added the inline
+
+5. you can't add inside a inline never add a block level elements.
+
+
+what are all the inline elements are there?
+
+closing tags / self closing
+
+Formatting tags - Block level(closing, self closing) - inline(closing, self closing)
+
+Interactive tags - Block level(closing, self closing) - inline(closing, self closing)
+
+Semantic tags - SEO
+
+Non semantic tags - div(block), span(inline)
+
+root html
+
+continer -
+
+head - doc type - meta tags - fav icon - title
+
+body -
+
+semantic HTML5
+
+non semantic
+
+formatted or interactive

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide & Show Paragraph</title>
+    <link rel="stylesheet" href="CSS/cssTask8.css">
+</head>
+<body>
+
+    <p id="para">
+        Web development is an exciting field that focuses on building websites and web applications for users around the world. It combines creativity and technical skills to create visually appealing and interactive digital experiences. Developers use HTML to structure content, CSS to design layouts and styles, and JavaScript to add dynamic functionality. As technology continues to evolve, web development remains one of the most in-demand skills, offering opportunities to create innovative solutions and improve the way people interact with information online.
+    </p>
+
+    <button onclick="hideParagraph()">Hide</button>
+    <button onclick="showParagraph()">Show</button>
+
+    <script>
+        function hideParagraph() {
+            document.getElementById("para").style.display = "none";
+        }
+
+        function showParagraph() {
+            document.getElementById("para").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+File - extention - like html after the file name .
+
+filename.html
+
+HTML - markup langage - used to make the web pages to sduturenct the content.
+
+Tags - html documents are created by tags
+
+(< >)
+
+Tags -
+
+closing Tags - opening tags and closing tags
+
+self closing Tags - single tags end with back slash
+
+What are all the Closing Tags -
+
+wha are all the Self Closing Tags -
+
+<h1>The Conent some data</h1>
+
+<input type="name" />
+
+Elements
+
+Root element -Single time user
+
+html
+
+
+Container Elements - 2 -
+
+1. head
+
+2. body
+
+child Elements - tags
+
+<html>
+
+<head>
+
+<title>This is the intro</title>
+
+</head>
+
+<body>
+
+<h1>WelCome Frontend</h1>
+
+<h6></h6>
+
+<p><p/>
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tasks</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color: #f4f4f4;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .dark{
+            background-color: #222;
+            color: white;
+        }
+
+        .task{
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .dark .task{
+            background: #333;
+        }
+
+        h2{
+            margin-bottom: 15px;
+        }
+
+        input,
+        textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+        }
+
+        button{
+            background-color: royalblue;
+            color: white;
+            width: 100px;
+            padding: 5px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: dodgerblue;
+        }
+
+        .card{
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 1 -->
+    <div class="task">
+        <h2>Task 1 - Character Counter</h2>
+
+        <textarea id="message" oninput="countCharacters()"></textarea>
+
+        <p id="count">Total Characters : 0</p>
+    </div>
+
+    <!-- Task 2 -->
+    <div class="task">
+        <h2>Task 2 - Age Category Checker</h2>
+
+        <input type="number" id="age" placeholder="Enter Age">
+
+        <button onclick="checkAge()">Check Age</button>
+
+        <p id="ageResult"></p>
+    </div>
+
+    <!-- Task 3 -->
+    <div class="task">
+        <h2>Task 3 - Dark Mode / Light Mode</h2>
+
+        <button onclick="toggleTheme()">Toggle Theme</button>
+    </div>
+
+    <!-- Task 4 -->
+    <div class="task">
+        <h2>Task 4 - Movie Ticket Calculator</h2>
+
+        <input type="number" id="tickets" placeholder="Enter Ticket Count">
+
+        <button onclick="calculateAmount()">Calculate</button>
+
+        <p id="totalAmount"></p>
+    </div>
+
+    <!-- Task 5 -->
+    <div class="task">
+        <h2>Task 5 - Profile Card Generator</h2>
+
+        <input type="text" id="name" placeholder="Enter Name">
+
+        <input type="text" id="role" placeholder="Enter Role">
+
+        <input type="text" id="company" placeholder="Enter Company">
+
+        <button onclick="generateCard()">Generate Card</button>
+
+        <div id="card"></div>
+    </div>
+
+    <!-- Task 6 -->
+    <div class="task">
+        <h2>Task 6 - Search Hero</h2>
+
+        <input type="text" id="heroInput" placeholder="Enter Hero Name">
+
+        <button onclick="searchHero()">Search</button>
+
+        <p id="heroResult"></p>
+    </div>
+
+    <script>
+
+        // Task 1
+        function countCharacters(){
+            let text = document.getElementById("message").value;
+            document.getElementById("count").innerText =
+                "Total Characters : " + text.length;
+        }
+
+        // Task 2
+        function checkAge(){
+
+            let age = Number(document.getElementById("age").value);
+
+            if(age >= 0 && age <= 12){
+                document.getElementById("ageResult").innerText = "Child";
+            }
+            else if(age >= 13 && age <= 19){
+                document.getElementById("ageResult").innerText = "Teenager";
+            }
+            else if(age >= 20 && age <= 59){
+                document.getElementById("ageResult").innerText = "Adult";
+            }
+            else{
+                document.getElementById("ageResult").innerText = "Senior Citizen";
+            }
+        }
+
+        // Task 3
+        function toggleTheme(){
+            document.body.classList.toggle("dark");
+        }
+
+        // Task 4
+        function calculateAmount(){
+
+            let tickets = Number(document.getElementById("tickets").value);
+
+            let total = tickets * 150;
+
+            document.getElementById("totalAmount").innerText =
+                "Total Amount : ₹" + total;
+        }
+
+        // Task 5
+        function generateCard(){
+
+            let name = document.getElementById("name").value;
+            let role = document.getElementById("role").value;
+            let company = document.getElementById("company").value;
+
+            document.getElementById("card").innerHTML = `
+                <div class="card">
+                    <h3>${name}</h3>
+                    <p>Role: ${role}</p>
+                    <p>Company: ${company}</p>
+                </div>
+            `;
+        }
+
+        // Task 6
+        function searchHero(){
+
+            let heroes = ["Vijay","Ajith","Suriya","SK","Dhanush"];
+
+            let heroName =
+                document.getElementById("heroInput").value;
+
+            if(heroes.includes(heroName)){
+                document.getElementById("heroResult").innerText =
+                    "Found";
+            }
+            else{
+                document.getElementById("heroResult").innerText =
+                    "Not Found";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

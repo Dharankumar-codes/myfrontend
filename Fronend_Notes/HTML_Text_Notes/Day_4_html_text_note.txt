@@ -1,0 +1,19 @@
+Attributes -
+
+Syntax - Opening tags - <h1 attribute-name = "value">This is content</h1>
+
+Global Attributes
+
+class -
+
+id -
+
+style -
+
+Local Attributes -
+
+scr - script, img, video, audio
+
+href - a
+
+alt - img

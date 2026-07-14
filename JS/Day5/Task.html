@@ -1,0 +1,161 @@
+<script>
+
+    // FUNCTION TASKS
+    // Task1
+
+    function greet() {
+        console.log("Welcome To JavaScript");
+    }
+
+    greet();
+
+    // task2
+
+    let name = "DharanKumar";
+
+    function showName() {
+        console.log(name);
+    }
+
+    showName();
+
+    // task3
+
+    function addNumbers() {
+        let result = 10 + 20;
+        console.log(result);
+    }
+
+    addNumbers();
+
+    // task4
+
+    function square() {
+        let result = 5 * 5;
+        console.log(result);
+    }
+
+    square();
+
+    // task5
+
+    function studentInfo() {
+        console.log("Name: DharanKumar");
+        console.log("Course: JavaScript");
+        console.log("City: Chennai");
+    }
+
+    studentInfo();
+
+    // ARRAY TASKS
+
+    // task6
+
+    let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+
+    console.log(fruits);
+
+    // task7
+
+    let studentNames = ["Dharan", "Kumar", "Rahul", "Arun", "Vijay"];
+
+    console.log(studentNames[0]);
+
+    // task8
+
+    let numbers = [10, 20, 30, 40, 50];
+
+    console.log(numbers[numbers.length - 1]);
+
+    // task9
+
+    let courses = [];
+
+    courses[0] = "HTML";
+    courses[1] = "CSS";
+    courses[2] = "JavaScript";
+
+    console.log(courses);
+
+    // task10
+
+    let colors = ["Red", "Blue", "Green", "Yellow", "Black"];
+
+    for (let i = 0; i < colors.length; i++) {
+        console.log(colors[i]);
+    }
+
+
+    // OBJECT TAKS
+
+    // task11
+
+    let student = {
+        name: "DharanKumar",
+        age: 25,
+        course: "JavaScript"
+    };
+
+    console.log(student);
+
+    // task12
+
+    let employee = {
+        employeeName: "Ravi",
+        age: 25,
+        department: "IT"
+    };
+
+    console.log(employee.employeeName);
+
+    // task13
+
+    let mobile = {
+        brand: "Samsung",
+        model: "Galaxy S24",
+        price: 99999
+    };
+
+    console.log("₹" + mobile["price"]);
+
+    // task14
+
+    let car = {
+        brand: "Toyota",
+        model: "corolla"
+    };
+
+    console.log(car.brand);
+    console.log(car.model);
+
+    // task15
+
+    let college = {
+        collegeName: "Global College",
+        location: "Chennai",
+        students: 4678
+    };
+
+    console.log(college.collegeName);
+    console.log(college.location);
+    console.log(college.students);
+
+    // Mini combined task
+
+    function showStudent() {
+
+        let studentDetails = ["Dharan", "afzal", "bhuvi"];
+
+        let courseDetails = {
+            course: "MERN",
+            duration: "6 Months"
+        };
+
+        console.log(studentDetails);
+        console.log(courseDetails.course);
+        console.log(courseDetails.duration);
+    }
+
+    showStudent();
+
+</script>

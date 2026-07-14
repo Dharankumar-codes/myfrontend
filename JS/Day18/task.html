@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Table</title>
+</head>
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>Name</th>
+                <th>Servings</th>
+                <th>Difficulty</th>
+            </tr>
+        </thead>
+
+        <tbody id="user"></tbody>
+    </table>
+
+    <script>
+
+        async function getData() {
+
+            const res = await fetch("https://dummyjson.com/recipes");
+            const data = await res.json();
+
+            // Save in localStorage
+            localStorage.setItem("recipes", JSON.stringify(data.recipes));
+
+            // Get data from localStorage
+            const recipes = JSON.parse(localStorage.getItem("recipes"));
+
+            const table = document.getElementById("user");
+
+            recipes.forEach(function(item, index) {
+
+                table.innerHTML += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${item.name}</td>
+                        <td>${item.servings}</td>
+                        <td>${item.difficulty}</td>
+                    </tr>
+                `;
+
+            });
+        }
+
+        getData();
+
+    </script>
+
+</body>
+</html>

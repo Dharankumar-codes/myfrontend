@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callbacks function tasks</title>
+</head>
+<body>
+    <script>
+        
+// Task 1 - Scope Example
+
+
+{let hero = "Vijay";
+
+function showHero() {
+    console.log("Inside Function:", hero);
+}
+
+showHero();
+
+if (true) {
+    console.log("Inside If Block:", hero);
+}
+
+for (let i = 1; i <= 1; i++) {
+    console.log("Inside Loop:", hero);
+}}
+
+
+
+// Task 2 - Function Scope
+
+
+{const movie = () => {
+    let collection = 800;
+    console.log("Inside Function:", collection);
+};
+
+movie();
+
+// console.log(collection);
+}
+
+
+
+// Task 3 - var vs let Scope
+
+
+{if (true) {
+    var actor1 = "Ajith";
+    let actor2 = "Vijay";
+
+    console.log("Inside Block actor1:", actor1);
+    console.log("Inside Block actor2:", actor2);
+}
+
+console.log("Outside Block actor1:", actor1);
+
+// console.log(actor2);
+}
+
+
+
+
+// Task 4 - Named Function
+
+
+{function showMovie() {
+    console.log("GOAT Movie Released");
+}
+
+showMovie();
+
+}
+
+// Task 5 - Arrow Function
+
+
+{const add = (a, b) => {
+    console.log("Sum =", a + b);
+};
+
+add(10, 20);}
+
+
+
+// Task 6 - Anonymous Arrow Function Callback
+
+
+{function booking(callback) {
+    callback();
+}
+
+booking(() => {
+    console.log("Booking Confirmed");
+});
+}
+
+
+// Task 7 - setTimeout with Anonymous Arrow Function
+
+
+{setTimeout(() => {
+    console.log("Movie Started");
+}, 2000);}
+
+
+
+// Task 8 - Callback Function
+
+
+{function processOrder(callback) {
+    console.log("Order Received");
+    callback();
+}
+
+processOrder(() => {
+    console.log("Order Delivered");
+});
+}
+
+
+// Task 9 - Counter Closure
+
+
+{function createCounter() {
+    let count = 0;
+
+    return function () {
+        count++;
+        console.log("Count:", count);
+    };
+}
+
+const counter = createCounter();
+
+counter();
+counter();
+counter();}
+
+
+
+// Task 10 - Banking Closure
+
+
+{function createBankAccount() {
+    let balance = 5000;
+
+    return {
+        deposit(amount) {
+            balance += amount;
+            console.log("Deposited:", amount);
+        },
+
+        withdraw(amount) {
+            balance -= amount;
+            console.log("Withdrawn:", amount);
+        },
+
+        checkBalance() {
+            console.log("Current Balance:", balance);
+        }
+    };
+}
+
+const account = createBankAccount();
+
+account.deposit(1000);
+account.withdraw(500);
+account.checkBalance();}
+    </script>
+</body>
+</html>

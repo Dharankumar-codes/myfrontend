@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background:#f4f7fc;
+            padding:30px;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            margin-bottom:20px;
+            border-left:6px solid #2563eb;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#2563eb;
+            margin-bottom:10px;
+        }
+
+        p{
+            margin-bottom:10px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        li{
+            margin-bottom:6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>1. Callback Function</h2>
+            <p>
+                A callback is a function that is passed into another function
+                and executed later when a particular task is completed.
+            </p>
+
+            <ul>
+                <li>Helps control the order of execution.</li>
+                <li>Used in asynchronous operations.</li>
+                <li>Allows one function to trigger another.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>2. Promise</h2>
+            <p>
+                A Promise represents the result of an asynchronous operation.
+                It can be pending, fulfilled, or rejected.
+            </p>
+
+            <ul>
+                <li>Reduces nested callbacks.</li>
+                <li>Makes code more manageable.</li>
+                <li>Provides easier error handling.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>3. Async / Await</h2>
+            <p>
+                Async and Await are modern JavaScript features that simplify
+                working with Promises.
+            </p>
+
+            <ul>
+                <li>Improves code readability.</li>
+                <li>Looks similar to normal synchronous code.</li>
+                <li>Useful for handling multiple asynchronous tasks.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>4. Fetch API</h2>
+            <p>
+                The Fetch API is used to send requests to a server and receive
+                responses from an API.
+            </p>
+
+            <ul>
+                <li>Retrieve information from a server.</li>
+                <li>Create new records.</li>
+                <li>Modify existing data.</li>
+                <li>Remove unwanted data.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

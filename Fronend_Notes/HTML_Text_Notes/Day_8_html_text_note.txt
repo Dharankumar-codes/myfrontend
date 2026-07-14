@@ -1,0 +1,62 @@
+<!DOCTYPE html> is called the document type declaration. It tells the browser that the webpage is written in HTML5. Without DOCTYPE, browsers may enter quirks mode and render the webpage incorrectly.
+
+
+What are Meta Tags?
+
+Meta tags provide information about the webpage to browsers, search engines, and external services. These tags are written inside the <head> section and are not visible directly on the webpage.
+
+
+
+What is Favicon?
+
+Favicon is the small icon shown in the browser tab near the webpage title.
+
+
+What are Open Graph (OG) Properties?
+
+OG properties are meta tags used for social media sharing. When links are shared on platforms like Facebook or LinkedIn, OG tags control how the preview appears.
+
+What is Audio Tag?
+
+The <audio> tag is used to embed audio files inside webpages.
+
+
+What is Video Tag?
+
+The <video> tag is used to embed videos directly inside webpages.
+
+
+What is iframe?
+
+The <iframe> tag is used to embed another webpage inside the current webpage.
+
+
+What is HTML5?
+
+HTML5 is the latest version of HTML introduced to improve multimedia support, semantic structure, and web application capabilities.
+
+Difference Between HTML and HTML5
+
+HTML
+
+HTML5
+
+Old version
+
+Latest version
+
+Limited multimedia
+
+Built-in audio/video
+
+No semantic tags
+
+Supports semantic tags
+
+Needed plugins
+
+Native media support
+
+Less API support
+
+Modern APIs available

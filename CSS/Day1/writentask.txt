@@ -1,0 +1,85 @@
+Inlinecss syntnx
+1.selector tag style="color:;" background-color: ;"
+2.selector tag style="color:;" background-color: ;"
+3.selector tag style="color:;" background-color: ;"
+4.selector tag style="color:;" background-color: ;"
+5.selector tag style="color:;" background-color: ;"
+6.selector tag style="color:;" background-color: ;"
+7.selector tag style="color:;" background-color: ;"
+8.selector tag style="color:;" background-color: ;"
+9.selector tag style="color:;" background-color: ;"
+10.selector tag style="color:;" background-color: ;"
+11.selector tag style="color:;" background-color: ;"
+12.selector tag style="color:;" background-color: ;"
+13.selector tag style="color:;" background-color: ;"
+14.selector tag style="color:;" background-color: ;"
+15.selector tag style="color:;" background-color: ;"
+16.selector tag style="color:;" background-color: ;"
+17.selector tag style="color:;" background-color: ;"
+18.selector tag style="color:;" background-color: ;"
+19.selector tag style="color:;" background-color: ;"
+20.selector tag style="color:;" background-color: ;"
+
+
+
+Externalcss syntnx
+1.Selector tag{
+    color:;
+    background-color:;
+}
+2.Selector tag{
+    color:;
+    background-color:;
+}
+3.Selector tag{
+    color:;
+    background-color:;
+}
+4.Selector tag{
+    color:;
+    background-color:;
+}
+5.Selector tag{
+    color:;
+    background-color:;
+}
+6.Selector tag{
+    color:;
+    background-color:;
+}
+7.Selector tag{
+    color:;
+    background-color:;
+}
+8.Selector tag{
+    color:;
+    background-color:;
+}
+9.Selector tag{
+    color:;
+    background-color:;
+}
+10.Selector tag{
+    color:;
+    background-color:;
+}
+11.Selector tag{
+    color:;
+    background-color:;
+}
+12.Selector tag{
+    color:;
+    background-color:;
+}
+13.Selector tag{
+    color:;
+    background-color:;
+}
+14.Selector tag{
+    color:;
+    background-color:;
+}
+15.Selector tag{
+    color:;
+    background-color:;
+}

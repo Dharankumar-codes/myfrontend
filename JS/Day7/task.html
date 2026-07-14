@@ -1,0 +1,209 @@
+<script>
+    // Task 1 - Find Missing Number
+{
+let numbers = [1, 2, 3, 5];
+
+
+for (let i = 0; i < numbers.length - 1; i++) {
+    if (numbers[i + 1] - numbers[i] > 1) {
+        console.log(numbers[i] + 1);
+    }
+}
+
+
+}
+
+// Task 2 - First Non-Repeated Character
+{
+let word = "programming";
+
+
+for (let i = 0; i < word.length; i++) {
+    let count = 0;
+
+    for (let j = 0; j < word.length; j++) {
+        if (word[i] === word[j]) {
+            count++;
+        }
+    }
+
+    if (count === 1) {
+        console.log(word[i]);
+        break;
+    }
+}
+
+
+}
+
+// Task 3 - First Repeated Character
+{
+let word = "javascript";
+
+
+for (let i = 0; i < word.length; i++) {
+    let count = 0;
+
+    for (let j = 0; j < word.length; j++) {
+        if (word[i] === word[j]) {
+            count++;
+        }
+    }
+
+    if (count > 1) {
+        console.log(word[i]);
+        break;
+    }
+}
+
+
+}
+
+// Task 4 - Move All Zeros To End
+{
+let numbers = [1, 0, 2, 0, 3, 4, 0];
+
+
+let result = [];
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] !== 0) {
+        result.push(numbers[i]);
+    }
+}
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === 0) {
+        result.push(0);
+    }
+}
+
+console.log(result);
+
+
+}
+
+// Task 5 - Count Occurrences
+{
+let heroes = ["Vijay", "Ajith", "Vijay", "SK"];
+
+
+let counts = {};
+
+for (let i = 0; i < heroes.length; i++) {
+    let hero = heroes[i];
+
+    if (counts[hero]) {
+        counts[hero]++;
+    } else {
+        counts[hero] = 1;
+    }
+}
+
+for (let hero in counts) {
+    console.log(hero + " = " + counts[hero]);
+}
+
+
+}
+
+// Task 6 - Most Frequent Element
+{
+let numbers = [1, 2, 2, 3, 2, 4, 1];
+
+
+let counts = {};
+let maxCount = 0;
+let mostFrequent;
+
+for (let i = 0; i < numbers.length; i++) {
+    let num = numbers[i];
+
+    if (counts[num]) {
+        counts[num]++;
+    } else {
+        counts[num] = 1;
+    }
+
+    if (counts[num] > maxCount) {
+        maxCount = counts[num];
+        mostFrequent = num;
+    }
+}
+
+console.log(mostFrequent);
+
+
+}
+
+// Task 7 - Separate Even & Odd
+{
+let numbers = [1, 2, 3, 4, 5, 6];
+
+
+let even = [];
+let odd = [];
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+        even.push(numbers[i]);
+    } else {
+        odd.push(numbers[i]);
+    }
+}
+
+console.log("Even :", even);
+console.log("Odd :", odd);
+
+
+}
+
+// Task 8 - Rotate Array Left Once
+{
+let heroes = ["Vijay", "Ajith", "Suriya", "SK"];
+
+
+let first = heroes.shift();
+heroes.push(first);
+
+console.log(heroes);
+
+
+}
+
+// Task 9 - Rotate Array Right Once
+{
+let heroes = ["Vijay", "Ajith", "Suriya", "SK"];
+
+
+let last = heroes.pop();
+heroes.unshift(last);
+
+console.log(heroes);
+
+
+}
+
+// Task 10 - Second Longest Name
+{
+let names = ["Vijay", "Ajith", "Sivakarthikeyan", "Dhanush"];
+
+
+let longest = "";
+let secondLongest = "";
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i].length > longest.length) {
+        secondLongest = longest;
+        longest = names[i];
+    } else if (names[i].length > secondLongest.length) {
+        secondLongest = names[i];
+    }
+}
+
+console.log(secondLongest);
+
+
+}
+
+</script>

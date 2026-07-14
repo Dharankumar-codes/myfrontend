@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Toggle Box</title>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+
+    <div class="text-center">
+        <button
+            id="toggleBtn"
+            class="bg-blue-500 text-white px-4 py-2 rounded mb-4">
+            Hide / Show Box
+        </button>
+
+        <div
+            id="box"
+            class="w-64 h-40 bg-red-500 rounded flex justify-center items-center text-white transition">
+            Center Box
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("toggleBtn");
+        const box = document.getElementById("box");
+
+        btn.addEventListener("click", () => {
+            box.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>
+        </div>
+    </div>
+</body>
+</html>
